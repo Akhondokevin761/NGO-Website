@@ -1,0 +1,191 @@
+/* Common Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:whitesmoke;
+    color: skyblue;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Need to customize the navigation bar so that it looks the same as that of home page */
+.nav-links{
+    flex: 1;
+    text-align: right;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.nav-links ul li a{
+    color: skyblue;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Lora',sans-serif;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: forestgreen;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* For small devices such as phones */
+/* The code has problem on close and menu tabs. revisit. */
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: forestgreen;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color:skyblue;
+        margin: 10px auto;
+        justify-content: right;
+        font-size: 30px;
+        cursor: pointer;
+        text-align: right;
+    }
+    .section>.nav-links>.icon{
+        display: flexbox;
+        justify-content: left;
+        align-items: center;
+        color: yellow;
+    }
+    .section>.nav-links>.icon-1{
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+    }
+    .nav-links ul{
+        padding: 20px;
+
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px 20px;
+    background: whitesmoke;
+    color: skyblue;
+}
+
+/* Blog styles */
+
+.Blog{
+    text-align: center;
+    padding: 50px 20px;
+}
+.Blog h1{
+    color: skyblue;
+    font-size: 2rem;
+}
+
+.Blog p{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: skyblue;
+}
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.blog-post{
+    background-color:forestgreen;
+    border: 1px solid forestgreen;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+
+.blog-post img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post h2{
+    font-size: 18px;
+    margin: 15px;
+}
+
+.blog-post p{
+    font-size: 1rem;
+    margin: 0 15px 15px;
+}
+.blog-post .read-more{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    background-color: forestgreen;
+    color: skyblue;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-post .read-more:hover {
+    background-color: goldenrod;
+}

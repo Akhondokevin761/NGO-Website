@@ -1,0 +1,184 @@
+/* Common Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.heading h1{
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:whitesmoke;
+    color: skyblue;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Need to customize the navigation bar so that it looks the same as that of home page */
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.nav-links ul li a{
+    color: skyblue;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Lora',sans-serif;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: forestgreen;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* For small devices such as phones */
+/* The code has problem on close and menu tabs. revisit. */
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: forestgreen;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+
+    }
+    nav .fa{
+        display: block;
+        color:skyblue;
+        margin: 10px auto;
+        justify-content: right;
+        font-size: 30px;
+        cursor: pointer;
+        text-align: right;
+    }
+    .section>.nav-links>.icon{
+        display: flexbox;
+        justify-content: left;
+        align-items: center;
+        color: yellow;
+    }
+    .section>.nav-links>.icon-1{
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px 20px;
+    background: whitesmoke;
+    color: skyblue;
+}
+
+/* Donation sectiom */
+
+h1{
+    color: skyblue;
+}
+
+p{
+    color: skyblue;
+    margin-bottom: 20px;
+}
+
+.donations-options{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color: forestgreen;
+    gap: 20px;
+}
+
+.options{
+    border: 1px solid forestgreen;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: forestgreen;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options h2{
+    color: skyblue;
+    margin-bottom: 10px;
+}
+
+.options button{
+    background-color: forestgreen;
+    color: skyblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.options button:hover{
+    background-color: goldenrod;
+}
+
+.option-bank-details{
+    text-align: left;
+    margin: 5px 0;
+    line-height: 1.2;
+}
+

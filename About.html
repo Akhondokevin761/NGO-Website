@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kazithrizeeco</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Aboutstyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+                <div class="icon">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="contact.html" class="active">CONTACT US</a></li>
+            </ul>
+        </div>
+            <div class="icon-1">
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </div>
+    </nav>
+    <section class="about">
+        <div class="video-container">
+            <video autoplay muted loop class="background-video">
+                <source src="Videos/164099-829185203_small.mp4" type="video/mp4">
+            Your browser does not support HTML5 video</video>
+            <div class="overlay-content">
+                <h1>About Us</h1>
+                <p>KaziThrive Eco-Pioneers is on a mission to combat climate change through education, action, and community involvement. We are dedicated to raising awareness, showcasing impactful initiatives, providing valuable educational resources, and encouraging active participation in addressing environmental challenges.</p>
+            </div>
+        </div>
+
+    </section>
+  <section class="About-MV">
+    <div class="MV-content">
+        <img src="Images/WhatsApp Image 2025-01-27 at 14.40.25_adb481ac.jpg" class="icon">
+        <h2>Our Mission</h2>
+        <p>To empower communities by promoting eco-friendly practices <br> and building resilience against climate change.</p>
+    </div>
+    <div class="MV-content">
+        <img src="Images/pexels-mircohunziker-1099217.jpg" class="icon">
+        <h2>Our Vision</h2>
+        <p>To pioneer sustainable solutions for a thriving, climate-resilient community.</p>
+    </div>
+
+  </section>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            &copy;2025 KaziThrive Eco-Pioneers. All rights reserved
+        </p>
+    </footer>
+
+    <!-- -----Javascript for Toggle Menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kazithrizeeco</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="GetInvolvedStyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+                <div class="icon">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="contact.html" class="active">CONTACT US</a></li>
+            </ul>
+        </div>
+            <div class="icon-1">
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </div>
+    </nav>
+    <section class="Hero-button">
+        <h1>Get Involved</h1>
+        <p>Join us in making a positive impact through donations, volunteering, and partnerships.</p>
+
+        <div class="options-available">
+            <div class="option">
+                <h2>Donate</h2>
+                <p>Your financial support helps us sustain and grow our efforts towards environmental conservation and community resilience.</p>
+                <a href="Donate.html" class="button">Donate Now</a>
+            </div>
+            <div class="option">
+                <h2>Volunteer</h2>
+                <p>Contribute your time and skills to support our initiatives, from tree-planting to educational workshops.</p>
+                <a href="#Volunteer" class="button">Become a Volunteer</a>
+            </div>
+            <div class="option">
+                <h2>Partner</h2>
+                <p>Partner with us to amplify our impact and achieve shared goals for a sustainable future.</p>
+                <a href="#Partner" class="button">Partner with Us</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            &copy;2025 KaziThrive Eco-Pioneers. All rights reserved
+        </p>
+    </footer>
+
+    <!-- -----Javascript for Toggle Menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+    </script>
+</body>
+</html>

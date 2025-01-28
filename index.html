@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kazithrizeeco</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+                <div class="icon">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="contact.html" class="active">CONTACT US</a></li>
+            </ul>
+        </div>
+            <div class="icon-1">
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </div>
+    </nav>
+    <!-- Image carousal -->
+     <section class="carousal">
+        <div class="carousal-container">
+            <div class="slides">
+                <img src="Images/WhatsApp Image 2025-01-27 at 14.40.22_dd98327e.jpg" alt="Image-1">
+            </div>
+            <div class="slides">
+                <img src="Images/jan-kopriva-LTMaAwxanGk-unsplash.jpg" alt="Image-2">
+            </div>
+            <div class="slides">
+                <img src="Images/WhatsApp Image 2025-01-27 at 14.37.10_ac6e9ee2.jpg" alt="Image-3">
+            </div>
+            <div class="slides">
+                <img src="Images/nareeta-martin-FoG7PKNYjpM-unsplash.jpg" alt="Image-3">
+            </div>
+        </div>
+
+
+     </section>
+    <div class="text-box">
+        <h1>KaziThrive Eco-Pioneers</h1>
+        <p>Building Climate Resilience through collective action and sustainable practices</p>
+        <a href="GetInvolved.html" class="Hero-button">Get Involved</a>
+    </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy;2025 KaziThrive Eco-Pioneers. All rights reserved
+        </p>
+    </footer>
+
+    <!-- -----Javascript for Toggle Menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+    </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselContainer = document.querySelector(".carousal-container");
+    const slides = document.querySelectorAll(".slides");
+    const totalSlides = slides.length;
+
+    let currentIndex = 0;
+
+    // Clone the first slide and append it to the end
+    const firstSlideClone = slides[0].cloneNode(true);
+    carouselContainer.appendChild(firstSlideClone);
+
+    function moveToNextSlide() {
+        currentIndex++;
+        carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Reset to the first slide after the last one
+        if (currentIndex === totalSlides) {
+            setTimeout(() => {
+                carouselContainer.style.transition = "none"; // Disable animation
+                currentIndex = 0;
+                carouselContainer.style.transform = `translateX(0)`;
+                setTimeout(() => {
+                    carouselContainer.style.transition = "transform 1s ease-in-out"; // Re-enable animation
+                });
+            }, 1000); // Match the transition duration
+        }
+    }
+
+    // Automatically move to the next slide every 5 seconds
+    setInterval(moveToNextSlide, 5000);
+});
+</script>
+</body>
+</html>

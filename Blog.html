@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kazithrizeeco</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Blogstyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+                <div class="icon">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="contact.html" class="actives">CONTACT US</a></li>
+            </ul>
+        </div>
+            <div class="icon-1">
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </div>
+    </nav>
+    <section class="Blog">
+        <h1>Our Blog</h1>
+        <p>Explore articles and insights on environmental sustainability and community development.</p>
+        <div class="blog-grid">
+            <!-- Blog 1 -->
+             <div class="blog-post">
+                <img src="Images/WhatsApp Image 2025-01-27 at 14.37.09_d369e3e6.jpg" alt="Post 1">
+                <h2>5 Ways to Promote Sustainability in Your Community</h2>
+                <p>Discover actionable tips to make your community greener and more eco-friendly.</p>
+                <a href="post1.html" class="read-more">Read More</a>
+             </div>
+             <!-- Blog 2 -->
+             <div class="blog-post">
+                <img src="Images/chelsea-WvusC5M-TM8-unsplash.jpg" alt="Post 1">
+                <h2>Importance of Renewable Energy Sources</h2>
+                <p>Learn about the benefits of switching to renewable energy and its impact on the planet.</p>
+                <a href="post2.html" class="read-more">Read More</a>
+             </div>
+
+             <!-- Blog 3 -->
+             <div class="blog-post">
+                <img src="Images/Capture.JPG" alt="Post 1">
+                <h2>How to Reduce Waste at Home</h2>
+                <p>Practical tips for minimizing  waste and creating a sustainable household.</p>
+                <a href="post3.html" class="read-more">Read More</a>
+             </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            &copy;2025 KaziThrive Eco-Pioneers. All rights reserved
+        </p>
+    </footer>
+
+    <!-- -----Javascript for Toggle Menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+    </script>
+</body>
+</html>

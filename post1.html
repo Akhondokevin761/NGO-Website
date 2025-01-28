@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kazithrizeeco</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Blogpoststyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+                <div class="icon">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="contact.html" class="active">CONTACT US</a></li>
+            </ul>
+        </div>
+            <div class="icon-1">
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </div>
+    </nav>
+
+<!-- Blogs -->
+ <div class="Blogs">
+    <article class="blog-post-content">
+        <h1>5 Ways to Promote Sustainability in Your Community</h1>
+        <p>Published on January 20,2025</p>
+        <img src="Images/WhatsApp Image 2025-01-27 at 14.37.09_d369e3e6.jpg" alt="Sustainability">
+        <p>
+            Sustainability starts at the community level. Here are five impactful ways you can help Promote
+            environmental sustainability within your neighbourhood:
+        </p>
+        <ol>
+            <li><strong>Encourage Recycling Programs:</strong>Set up accessible recycling points and educate residents on proper waste disposal.</li>
+            <li><strong>Plant Trees:</strong>Organize tree-planting events to improve air quality and beautify the area.</li>
+            <li><strong>Promote Public Transportation:</strong>Advocate for carpooling or using public transport to reduce emission of greenhouse gases.</li>
+            <li><strong>Educate of Energy Efficiency:</strong>Host workshops on saving energy through efficient appliances and habits.</li>
+            <li><strong>Support Local Eco-Friendly Businesses:</strong>Highlight local businesses that prioritize sustainability and reduce their carbon footprint.</li>
+        </ol>
+        <p>
+            Together, we can create a greener, healthier planet for future generations. Start with small steps today and inspire others to follow.
+        </p>
+        <a href="Blog.html" class="back-link">Back to Blog</a>
+    </article>
+</div>
+
+</section>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            &copy;2025 KaziThrive Eco-Pioneers. All rights reserved
+        </p>
+    </footer>
+
+    <!-- -----Javascript for Toggle Menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+    </script>
+</body>
+</html>

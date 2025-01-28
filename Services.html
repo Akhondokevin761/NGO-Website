@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kazithrizeeco</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Servicesstyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+                <div class="icon">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="contact.html" class="active">CONTACT US</a></li>
+            </ul>
+        </div>
+            <div class="icon-1">
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </div>
+    </nav>
+    <section class="Services">
+        <div class="services-container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <img src="Images/irewolede-PvwdlXqo85k-unsplash.jpg" alt="Education" class="service-image">
+                <h3>Education</h3>
+                <h4>Empowering Through Knowledge</h4>
+                <p>Our educational programs equip individuals with the necessary knowledge and skills to make a difference. We offer workshops, seminars, and resources focused on environmental conservation and sustainable practices.</p>
+
+            </div>
+            <div class="service-item">
+                <img src="Images/WhatsApp Image 2025-01-27 at 14.40.45_587696c7.jpg" alt="Community" class="service-image">
+                <h3>Community Action</h3>
+                <h4>Uniting for Change</h4>
+                <p>Join us in our community-driven initiatives aimed at creating a positive environmental impact. We organize clean-up events, tree-planting drives, and awareness campaigns to engage and empower the community.</p>
+            </div>
+            <div class="service-item">
+                <img src="Images/jan-kopriva-LTMaAwxanGk-unsplash.jpg" alt="Advocacy" class="service-image">
+                <h3>Advocacy</h3>
+                <h4>Promoting Change</h4>
+                <p>We advocate for policy changes and sustainable practices to drive significant environmental progress. Our advocacy efforts focus on influencing decision-makers and creating a more sustainable future for all.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            &copy;2025 KaziThrive Eco-Pioneers. All rights reserved
+        </p>
+    </footer>
+
+    <!-- -----Javascript for Toggle Menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+    </script>
+</body>
+</html>
